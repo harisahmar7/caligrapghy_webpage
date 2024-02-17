@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IBTESHAM ARTS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('./Image/BG_IMAGE_1.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("./Image/BG_IMAGE_2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("./Image/BG_IMAGE_3.jpg");
+  min-height: 400px;
+}
+
+.frost-wide {letter-spacing: 10px;}
+.frost-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="frost-top">
+  <div class="frost-bar" id="myNavbar">
+    <a class="frost-bar-item frost-button frost-hover-black frost-hide-medium frost-hide-large frost-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="frost-bar-item frost-button">HOME</a>
+    <a href="#about" class="frost-bar-item frost-button frost-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="frost-bar-item frost-button frost-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="frost-bar-item frost-button frost-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="frost-bar-item frost-button frost-hide-small frost-right frost-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="frost-bar-block frost-white frost-hide frost-hide-large frost-hide-medium">
+    <a href="#about" class="frost-bar-item frost-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="frost-bar-item frost-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="frost-bar-item frost-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="frost-bar-item frost-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 frost-display-container frost-opacity-min" id="home">
+  <div class="frost-display-middle" style="white-space:nowrap;">
+    <span class="frost-center frost-padding-large frost-black frost-xlarge frost-wide frost-animate-opacity">IBTESHAM <span class="frost-hide-small">ARTS</span> 
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="frost-content frost-container frost-padding-64" id="about">
+  <h3 class="frost-center">ABOUT ME</h3>
+  <p class="frost-center"><em>I love calligraphy</em></p>
+  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div class="frost-row">
+    <div class="frost-col m6 frost-center frost-padding-large">
+      <p><b><i class="fa fa-user frost-margin-right"></i>Ibtesham Kehkashan [Artist]</b></p><br>
+      <img src="/frostimages/avatar_hat.jpg" class="frost-round frost-image frost-opacity frost-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="frost-col m6 frost-hide-small frost-padding-large">
+      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <p class="frost-large frost-center frost-padding-16">Im really good at:</p>
+  <p class="frost-wide"><i class="fa fa-leaf"></i>Sculpture Art</p>
+  <div class="frost-light-grey">
+    <div class="frost-container frost-padding-small frost-dark-grey frost-center" style="width:90%">90%</div>
+  </div>
+  <p class="frost-wide"><i class="fa fa-paint-brush"></i>Arabic Calligraphy</p>
+  <div class="frost-light-grey">
+    <div class="frost-container frost-padding-small frost-dark-grey frost-center" style="width:85%">85%</div>
+  </div>
+  <p class="frost-wide"><i class="fa fa-diamond"></i>Texture Designing</p>
+  <div class="frost-light-grey">
+    <div class="frost-container frost-padding-small frost-dark-grey frost-center" style="width:80%">80%</div>
+  </div>
+</div>
+
+<div class="frost-row frost-center frost-dark-grey frost-padding-16">
+  <div class="frost-quarter frost-section">
+    <span class="frost-xlarge">100+</span><br>
+    Order
+  </div>
+  <div class="frost-quarter frost-section">
+    <span class="frost-xlarge">60+</span><br>
+    Order Done
+  </div>
+  <div class="frost-quarter frost-section">
+    <span class="frost-xlarge">60+</span><br>
+    Happy Clients
+  </div>
+  <div class="frost-quarter frost-section">
+    <span class="frost-xlarge">4.9<i class="fa fa-star-o"></i></span><br>
+    Rating
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 frost-display-container frost-opacity-min">
+  <div class="frost-display-middle">
+    <span class="frost-xxlarge frost-text-white frost-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="frost-content frost-container frost-padding-64" id="portfolio">
+  <h3 class="frost-center">MY WORK</h3>
+  <p class="frost-center"><em>Here are some of my latest art.<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="frost-row-padding frost-center">
+    <div class="frost-col m3">
+      <img src="./Image/Product_Image/1.jpg" style="width:100%; height: 300px" onclick="onClick(this)" class="frost-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="frost-col m3">
+      <img src="./Image/Product_Image/2.jpg" style="width:100%; height: 300px" onclick="onClick(this)" class="frost-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="frost-col m3">
+      <img src="./Image/Product_Image/3.jpg" style="width:100%; height: 300px" onclick="onClick(this)" class="frost-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="frost-col m3">
+      <img src="./Image/Product_Image/4.jpg" style="width:100%; height: 300px" onclick="onClick(this)" class="frost-hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
+
+  <div class="frost-row-padding frost-center frost-section">
+    <div class="frost-col m3">
+      <img src="./Image/Product_Image/5.jpg" style="width:100%; height: 300px" onclick="onClick(this)" class="frost-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="frost-col m3">
+      <img src="./Image/Product_Image/6.jpg" style="width:100%; height: 300px" onclick="onClick(this)" class="frost-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="frost-col m3">
+      <img src="./Image/Product_Image/7.jpg" style="width:100%; height: 300px" onclick="onClick(this)" class="frost-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="frost-col m3">
+      <img src="./Image/Product_Image/8.jpg" style="width:100%; height: 300px" onclick="onClick(this)" class="frost-hover-opacity" alt="Sailing">
+    </div>
+    <button class="frost-button frost-padding-large frost-light-grey" style="margin-top:64px">LOAD MORE</button>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="frost-modal frost-black" onclick="this.style.display='none'">
+  <span class="frost-button frost-large frost-black frost-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="frost-modal-content frost-animate-zoom frost-center frost-transparent frost-padding-64">
+    <img id="img01" class="frost-image">
+    <p id="caption" class="frost-opacity frost-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 frost-display-container frost-opacity-min">
+  <div class="frost-display-middle">
+     <span class="frost-xxlarge frost-text-white frost-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="frost-content frost-container frost-padding-64" id="contact">
+  <h3 class="frost-center">WHERE I ART</h3>
+  <p class="frost-center"><em>I'd love your feedback!</em></p>
+
+  <div class="frost-row frost-padding-32 frost-section">
+    <div class="frost-col m4 frost-container">
+      <img src="./Image/Product_Image/BG_IMAGE_1.jpg" class="frost-image frost-round" style="width:100%">
+    </div>
+    <div class="frost-col m8 frost-panel">
+      <div class="frost-large frost-margin-bottom">
+        <i class="fa fa-map-marker fa-fw frost-hover-text-black frost-xlarge frost-margin-right"></i> Kolkata, INDIA<br>
+        <i class="fa fa-phone fa-fw frost-hover-text-black frost-xlarge frost-margin-right"></i> Phone: +91 8240886930<br>
+        <i class="fa fa-envelope fa-fw frost-hover-text-black frost-xlarge frost-margin-right"></i> Email: ibteshamk22@gmail.com<br>
+      </div>
+      <p>Interested people contact me <i class="fa fa-phone-square"></i>, or leave me a note: <i class="fa fa-smile-o"></i></p>
+      <form action="/action_page.php" target="_blank">
+        <div class="frost-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="frost-half">
+            <input class="frost-input frost-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="frost-half">
+            <input class="frost-input frost-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="frost-input frost-border" type="text" placeholder="Message" required name="Message">
+        <button class="frost-button frost-black frost-right frost-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="frost-center frost-black frost-padding-64 frost-opacity frost-hover-opacity-off">
+  <a href="#home" class="frost-button frost-light-grey"><i class="fa fa-arrow-up frost-margin-right"></i>To the top</a>
+  <div class="frost-xlarge frost-section">
+    <i class="fa fa-facebook-official frost-hover-opacity"></i>
+    <i class="fa fa-instagram frost-hover-opacity"></i>
+    <i class="fa fa-snapchat frost-hover-opacity"></i>
+    <i class="fa fa-pinterest-p frost-hover-opacity"></i>
+    <i class="fa fa-twitter frost-hover-opacity"></i>
+    <i class="fa fa-linkedin frost-hover-opacity"></i>
+  </div>
+  <p>Designed by <a title="Haris" target="_blank" class="frost-hover-text-green">Ahmar</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "frost-bar" + " frost-card" + " frost-animate-top" + " frost-white";
+    } else {
+        navbar.className = navbar.className.replace(" frost-card frost-animate-top frost-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("frost-show") == -1) {
+        x.className += " frost-show";
+    } else {
+        x.className = x.className.replace(" frost-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
